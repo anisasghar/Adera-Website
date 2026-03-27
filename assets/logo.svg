@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4aa60;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f0d080;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b8860b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Laurel wreath circle -->
+  <g transform="translate(200, 72)" fill="url(#goldGrad)">
+    <!-- Wreath leaves arranged in a circle -->
+    <!-- Top leaves -->
+    <ellipse cx="0" cy="-48" rx="4" ry="9" transform="rotate(0)" opacity="0.95"/>
+    <ellipse cx="0" cy="-48" rx="4" ry="9" transform="rotate(22)" opacity="0.95"/>
+    <ellipse cx="0" cy="-48" rx="4" ry="9" transform="rotate(44)" opacity="0.95"/>
+    <ellipse cx="0" cy="-48" rx="4" ry="9" transform="rotate(66)" opacity="0.95"/>
+    <ellipse cx="0" cy="-48" rx="4" ry="9" transform="rotate(88)" opacity="0.95"/>
+    <ellipse cx="0" cy="-48" rx="4" ry="9" transform="rotate(110)" opacity="0.95"/>
+    <ellipse cx="0" cy="-48" rx="4" ry="9" transform="rotate(132)" opacity="0.95"/>
+    <ellipse cx="0" cy="-48" rx="4" ry="9" transform="rotate(154)" opacity="0.95"/>
+    <ellipse cx="0" cy="-48" rx="4" ry="9" transform="rotate(176)" opacity="0.95"/>
+    <ellipse cx="0" cy="-48" rx="4" ry="9" transform="rotate(198)" opacity="0.95"/>
+    <ellipse cx="0" cy="-48" rx="4" ry="9" transform="rotate(220)" opacity="0.95"/>
+    <ellipse cx="0" cy="-48" rx="4" ry="9" transform="rotate(242)" opacity="0.95"/>
+    <ellipse cx="0" cy="-48" rx="4" ry="9" transform="rotate(264)" opacity="0.95"/>
+    <ellipse cx="0" cy="-48" rx="4" ry="9" transform="rotate(286)" opacity="0.95"/>
+    <ellipse cx="0" cy="-48" rx="4" ry="9" transform="rotate(308)" opacity="0.95"/>
+    <ellipse cx="0" cy="-48" rx="4" ry="9" transform="rotate(330)" opacity="0.95"/>
+    <!-- Inner ring -->
+    <ellipse cx="0" cy="-36" rx="3" ry="7" transform="rotate(11)" opacity="0.75"/>
+    <ellipse cx="0" cy="-36" rx="3" ry="7" transform="rotate(33)" opacity="0.75"/>
+    <ellipse cx="0" cy="-36" rx="3" ry="7" transform="rotate(55)" opacity="0.75"/>
+    <ellipse cx="0" cy="-36" rx="3" ry="7" transform="rotate(77)" opacity="0.75"/>
+    <ellipse cx="0" cy="-36" rx="3" ry="7" transform="rotate(99)" opacity="0.75"/>
+    <ellipse cx="0" cy="-36" rx="3" ry="7" transform="rotate(121)" opacity="0.75"/>
+    <ellipse cx="0" cy="-36" rx="3" ry="7" transform="rotate(143)" opacity="0.75"/>
+    <ellipse cx="0" cy="-36" rx="3" ry="7" transform="rotate(165)" opacity="0.75"/>
+    <ellipse cx="0" cy="-36" rx="3" ry="7" transform="rotate(187)" opacity="0.75"/>
+    <ellipse cx="0" cy="-36" rx="3" ry="7" transform="rotate(209)" opacity="0.75"/>
+    <ellipse cx="0" cy="-36" rx="3" ry="7" transform="rotate(231)" opacity="0.75"/>
+    <ellipse cx="0" cy="-36" rx="3" ry="7" transform="rotate(253)" opacity="0.75"/>
+    <ellipse cx="0" cy="-36" rx="3" ry="7" transform="rotate(275)" opacity="0.75"/>
+    <ellipse cx="0" cy="-36" rx="3" ry="7" transform="rotate(297)" opacity="0.75"/>
+    <ellipse cx="0" cy="-36" rx="3" ry="7" transform="rotate(319)" opacity="0.75"/>
+    <ellipse cx="0" cy="-36" rx="3" ry="7" transform="rotate(341)" opacity="0.75"/>
+  </g>
+  <!-- Text -->
+  <text x="200" y="155" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" letter-spacing="8" fill="url(#goldGrad)" font-weight="400">ADERA HOLDINGS</text>
+</svg>
