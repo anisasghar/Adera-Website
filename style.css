@@ -530,6 +530,11 @@ img { display: block; max-width: 100%; }
   border: 1px solid var(--border);
 }
 
+/* 5th pillar spans 2 columns on the second row to stay centred */
+.pillar--wide {
+  grid-column: span 2;
+}
+
 .pillar {
   background: var(--black);
   padding: 2.5rem 2rem;
@@ -557,6 +562,20 @@ img { display: block; max-width: 100%; }
   font-size: 0.85rem;
   color: rgba(245, 243, 238, 0.55);
   line-height: 1.8;
+}
+
+.pillars__closing {
+  margin-top: 3rem;
+  text-align: center;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.9rem;
+  color: rgba(245, 243, 238, 0.5);
+  line-height: 1.9;
+  font-style: italic;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
 }
 
 /* ===========================
@@ -841,6 +860,7 @@ a.contact__detail-value:hover { color: var(--gold-light); }
    =========================== */
 @media (max-width: 1024px) {
   .pillars__grid { grid-template-columns: repeat(2, 1fr); }
+  .pillar--wide { grid-column: span 2; }
   .portfolio__grid { grid-template-columns: repeat(2, 1fr); }
   .about__grid { gap: 3rem; }
 }
@@ -878,6 +898,7 @@ a.contact__detail-value:hover { color: var(--gold-light); }
   .stat__divider { display: none; }
 
   .pillars__grid { grid-template-columns: 1fr; }
+  .pillar--wide { grid-column: span 1; }
   .portfolio__grid { grid-template-columns: 1fr; }
 
   .contact__grid { grid-template-columns: 1fr; gap: 3rem; }
