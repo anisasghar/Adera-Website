@@ -1,109 +1,101 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
   <defs>
-    <!-- Primary gold gradient: dark → bright → dark, diagonal -->
     <linearGradient id="g1" x1="15%" y1="5%" x2="85%" y2="95%">
-      <stop offset="0%"   stop-color="#6B4E10"/>
-      <stop offset="28%"  stop-color="#BF9840"/>
-      <stop offset="52%"  stop-color="#EDD06A"/>
-      <stop offset="74%"  stop-color="#C09438"/>
-      <stop offset="100%" stop-color="#6B4E10"/>
+      <stop offset="0%" stop-color="#6B4A0C"/>
+      <stop offset="28%" stop-color="#C0963A"/>
+      <stop offset="52%" stop-color="#EED06A"/>
+      <stop offset="76%" stop-color="#BF9438"/>
+      <stop offset="100%" stop-color="#6B4A0C"/>
     </linearGradient>
-    <!-- Secondary gradient for inner ring (slightly warmer) -->
     <linearGradient id="g2" x1="85%" y1="5%" x2="15%" y2="95%">
-      <stop offset="0%"   stop-color="#7A5A12"/>
-      <stop offset="35%"  stop-color="#D4A845"/>
-      <stop offset="58%"  stop-color="#F0D268"/>
-      <stop offset="100%" stop-color="#7A5A12"/>
+      <stop offset="0%" stop-color="#7A5A10"/>
+      <stop offset="40%" stop-color="#D8B04C"/>
+      <stop offset="100%" stop-color="#7A5A10"/>
     </linearGradient>
-    <!-- Subtle soft-focus to smooth leaf edges -->
     <filter id="soft">
-      <feGaussianBlur stdDeviation="0.7" result="b"/>
+      <feGaussianBlur stdDeviation="0.6" result="b"/>
       <feComposite in="SourceGraphic" in2="b" operator="over"/>
     </filter>
   </defs>
 
-  <rect width="800" height="800" fill="#080808"/>
+  <rect width="800" height="800" fill="#0D0B09"/>
 
-  <!-- Outer branch spiral -->
+  <!-- Outer branch -->
   <g fill="url(#g1)" filter="url(#soft)">
-    <path d="M 0 0 C  5.57 -2.37    4.46 -16.22    0 -19.78 C  -4.46 -16.22    -5.57 -2.37    0 0 Z" transform="translate(400.00,146.00) rotate(44.00)"/>
-    <path d="M 0 0 C  5.59 -2.38    4.47 -16.26    0 -19.83 C  -4.47 -16.26    -5.59 -2.38    0 0 Z" transform="translate(431.24,148.89) rotate(-33.41)"/>
-    <path d="M 0 0 C  5.63 -2.40    4.51 -16.40    0 -20.00 C  -4.51 -16.40    -5.63 -2.40    0 0 Z" transform="translate(461.41,157.48) rotate(65.18)"/>
-    <path d="M 0 0 C  5.71 -2.43    4.57 -16.62    0 -20.26 C  -4.57 -16.62    -5.71 -2.43    0 0 Z" transform="translate(489.49,171.46) rotate(-12.24)"/>
-    <path d="M 0 0 C  5.81 -2.47    4.65 -16.91    0 -20.62 C  -4.65 -16.91    -5.81 -2.47    0 0 Z" transform="translate(514.53,190.37) rotate(86.35)"/>
-    <path d="M 0 0 C  5.93 -2.53    4.75 -17.27    0 -21.06 C  -4.75 -17.27    -5.93 -2.53    0 0 Z" transform="translate(535.66,213.55) rotate(8.94)"/>
-    <path d="M 0 0 C  6.08 -2.59    4.86 -17.68    0 -21.56 C  -4.86 -17.68    -6.08 -2.59    0 0 Z" transform="translate(552.18,240.22) rotate(107.53)"/>
-    <path d="M 0 0 C  6.23 -2.65    4.99 -18.14    0 -22.12 C  -4.99 -18.14    -6.23 -2.65    0 0 Z" transform="translate(563.51,269.48) rotate(30.12)"/>
-    <path d="M 0 0 C  6.40 -2.72    5.12 -18.62    0 -22.70 C  -5.12 -18.62    -6.40 -2.72    0 0 Z" transform="translate(569.27,300.31) rotate(128.71)"/>
-    <path d="M 0 0 C  6.56 -2.80    5.25 -19.10    0 -23.30 C  -5.25 -19.10    -6.56 -2.80    0 0 Z" transform="translate(569.27,331.69) rotate(51.29)"/>
-    <path d="M 0 0 C  6.73 -2.87    5.38 -19.58    0 -23.88 C  -5.38 -19.58    -6.73 -2.87    0 0 Z" transform="translate(563.51,362.52) rotate(149.88)"/>
-    <path d="M 0 0 C  6.88 -2.93    5.51 -20.04    0 -24.44 C  -5.51 -20.04    -6.88 -2.93    0 0 Z" transform="translate(552.18,391.78) rotate(72.47)"/>
-    <path d="M 0 0 C  7.03 -2.99    5.62 -20.45    0 -24.94 C  -5.62 -20.45    -7.03 -2.99    0 0 Z" transform="translate(535.66,418.45) rotate(171.06)"/>
-    <path d="M 0 0 C  7.15 -3.05    5.72 -20.81    0 -25.38 C  -5.72 -20.81    -7.15 -3.05    0 0 Z" transform="translate(514.53,441.63) rotate(93.65)"/>
-    <path d="M 0 0 C  7.25 -3.09    5.80 -21.10    0 -25.74 C  -5.80 -21.10    -7.25 -3.09    0 0 Z" transform="translate(489.49,460.54) rotate(192.24)"/>
-    <path d="M 0 0 C  7.33 -3.12    5.86 -21.32    0 -26.00 C  -5.86 -21.32    -7.33 -3.12    0 0 Z" transform="translate(461.41,474.52) rotate(114.82)"/>
-    <path d="M 0 0 C  7.37 -3.14    5.90 -21.46    0 -26.17 C  -5.90 -21.46    -7.37 -3.14    0 0 Z" transform="translate(431.24,483.11) rotate(213.41)"/>
-    <path d="M 0 0 C  7.39 -3.15    5.91 -21.50    0 -26.22 C  -5.91 -21.50    -7.39 -3.15    0 0 Z" transform="translate(400.00,486.00) rotate(136.00)"/>
-    <path d="M 0 0 C  7.37 -3.14    5.90 -21.46    0 -26.17 C  -5.90 -21.46    -7.37 -3.14    0 0 Z" transform="translate(368.76,483.11) rotate(234.59)"/>
-    <path d="M 0 0 C  7.33 -3.12    5.86 -21.32    0 -26.00 C  -5.86 -21.32    -7.33 -3.12    0 0 Z" transform="translate(338.59,474.52) rotate(157.18)"/>
-    <path d="M 0 0 C  7.25 -3.09    5.80 -21.10    0 -25.74 C  -5.80 -21.10    -7.25 -3.09    0 0 Z" transform="translate(310.51,460.54) rotate(255.76)"/>
-    <path d="M 0 0 C  7.15 -3.05    5.72 -20.81    0 -25.38 C  -5.72 -20.81    -7.15 -3.05    0 0 Z" transform="translate(285.47,441.63) rotate(178.35)"/>
-    <path d="M 0 0 C  7.03 -2.99    5.62 -20.45    0 -24.94 C  -5.62 -20.45    -7.03 -2.99    0 0 Z" transform="translate(264.34,418.45) rotate(276.94)"/>
-    <path d="M 0 0 C  6.88 -2.93    5.51 -20.04    0 -24.44 C  -5.51 -20.04    -6.88 -2.93    0 0 Z" transform="translate(247.82,391.78) rotate(199.53)"/>
-    <path d="M 0 0 C  6.73 -2.87    5.38 -19.58    0 -23.88 C  -5.38 -19.58    -6.73 -2.87    0 0 Z" transform="translate(236.49,362.52) rotate(298.12)"/>
-    <path d="M 0 0 C  6.56 -2.80    5.25 -19.10    0 -23.30 C  -5.25 -19.10    -6.56 -2.80    0 0 Z" transform="translate(230.73,331.69) rotate(220.71)"/>
-    <path d="M 0 0 C  6.40 -2.72    5.12 -18.62    0 -22.70 C  -5.12 -18.62    -6.40 -2.72    0 0 Z" transform="translate(230.73,300.31) rotate(319.29)"/>
-    <path d="M 0 0 C  6.23 -2.65    4.99 -18.14    0 -22.12 C  -4.99 -18.14    -6.23 -2.65    0 0 Z" transform="translate(236.49,269.48) rotate(241.88)"/>
-    <path d="M 0 0 C  6.08 -2.59    4.86 -17.68    0 -21.56 C  -4.86 -17.68    -6.08 -2.59    0 0 Z" transform="translate(247.82,240.22) rotate(340.47)"/>
-    <path d="M 0 0 C  5.93 -2.53    4.75 -17.27    0 -21.06 C  -4.75 -17.27    -5.93 -2.53    0 0 Z" transform="translate(264.34,213.55) rotate(263.06)"/>
-    <path d="M 0 0 C  5.81 -2.47    4.65 -16.91    0 -20.62 C  -4.65 -16.91    -5.81 -2.47    0 0 Z" transform="translate(285.47,190.37) rotate(361.65)"/>
-    <path d="M 0 0 C  5.71 -2.43    4.57 -16.62    0 -20.26 C  -4.57 -16.62    -5.71 -2.43    0 0 Z" transform="translate(310.51,171.46) rotate(284.24)"/>
-    <path d="M 0 0 C  5.63 -2.40    4.51 -16.40    0 -20.00 C  -4.51 -16.40    -5.63 -2.40    0 0 Z" transform="translate(338.59,157.48) rotate(382.82)"/>
-    <path d="M 0 0 C  5.59 -2.38    4.47 -16.26    0 -19.83 C  -4.47 -16.26    -5.59 -2.38    0 0 Z" transform="translate(368.76,148.89) rotate(305.41)"/>
+    <path d="M 0 0 C  5.88 -1.55    5.00 -10.63    0 -19.32 C  -5.00 -10.63    -5.88 -1.55    0 0 Z" transform="translate(400.00,147.00) rotate(42.00)"/>
+    <path d="M 0 0 C  5.90 -1.55    5.02 -10.66    0 -19.39 C  -5.02 -10.66    -5.90 -1.55    0 0 Z" transform="translate(432.78,150.23) rotate(-30.75)"/>
+    <path d="M 0 0 C  5.97 -1.57    5.07 -10.78    0 -19.60 C  -5.07 -10.78    -5.97 -1.57    0 0 Z" transform="translate(464.29,159.79) rotate(64.50)"/>
+    <path d="M 0 0 C  6.07 -1.60    5.16 -10.97    0 -19.94 C  -5.16 -10.97    -6.07 -1.60    0 0 Z" transform="translate(493.34,175.31) rotate(-8.25)"/>
+    <path d="M 0 0 C  6.21 -1.63    5.28 -11.22    0 -20.40 C  -5.28 -11.22    -6.21 -1.63    0 0 Z" transform="translate(518.79,196.21) rotate(87.00)"/>
+    <path d="M 0 0 C  6.38 -1.68    5.42 -11.53    0 -20.96 C  -5.42 -11.53    -6.38 -1.68    0 0 Z" transform="translate(539.69,221.66) rotate(14.25)"/>
+    <path d="M 0 0 C  6.57 -1.73    5.59 -11.88    0 -21.59 C  -5.59 -11.88    -6.57 -1.73    0 0 Z" transform="translate(555.21,250.71) rotate(109.50)"/>
+    <path d="M 0 0 C  6.78 -1.78    5.76 -12.26    0 -22.28 C  -5.76 -12.26    -6.78 -1.78    0 0 Z" transform="translate(564.77,282.22) rotate(36.75)"/>
+    <path d="M 0 0 C  7.00 -1.84    5.95 -12.65    0 -23.00 C  -5.95 -12.65    -7.00 -1.84    0 0 Z" transform="translate(568.00,315.00) rotate(132.00)"/>
+    <path d="M 0 0 C  7.22 -1.90    6.14 -13.04    0 -23.72 C  -6.14 -13.04    -7.22 -1.90    0 0 Z" transform="translate(564.77,347.78) rotate(59.25)"/>
+    <path d="M 0 0 C  7.43 -1.95    6.31 -13.42    0 -24.41 C  -6.31 -13.42    -7.43 -1.95    0 0 Z" transform="translate(555.21,379.29) rotate(154.50)"/>
+    <path d="M 0 0 C  7.62 -2.00    6.48 -13.77    0 -25.04 C  -6.48 -13.77    -7.62 -2.00    0 0 Z" transform="translate(539.69,408.34) rotate(81.75)"/>
+    <path d="M 0 0 C  7.79 -2.05    6.62 -14.08    0 -25.60 C  -6.62 -14.08    -7.79 -2.05    0 0 Z" transform="translate(518.79,433.79) rotate(177.00)"/>
+    <path d="M 0 0 C  7.93 -2.08    6.74 -14.33    0 -26.06 C  -6.74 -14.33    -7.93 -2.08    0 0 Z" transform="translate(493.34,454.69) rotate(104.25)"/>
+    <path d="M 0 0 C  8.03 -2.11    6.83 -14.52    0 -26.40 C  -6.83 -14.52    -8.03 -2.11    0 0 Z" transform="translate(464.29,470.21) rotate(199.50)"/>
+    <path d="M 0 0 C  8.10 -2.13    6.88 -14.64    0 -26.61 C  -6.88 -14.64    -8.10 -2.13    0 0 Z" transform="translate(432.78,479.77) rotate(126.75)"/>
+    <path d="M 0 0 C  8.12 -2.13    6.90 -14.67    0 -26.68 C  -6.90 -14.67    -8.12 -2.13    0 0 Z" transform="translate(400.00,483.00) rotate(222.00)"/>
+    <path d="M 0 0 C  8.10 -2.13    6.88 -14.64    0 -26.61 C  -6.88 -14.64    -8.10 -2.13    0 0 Z" transform="translate(367.22,479.77) rotate(149.25)"/>
+    <path d="M 0 0 C  8.03 -2.11    6.83 -14.52    0 -26.40 C  -6.83 -14.52    -8.03 -2.11    0 0 Z" transform="translate(335.71,470.21) rotate(244.50)"/>
+    <path d="M 0 0 C  7.93 -2.08    6.74 -14.33    0 -26.06 C  -6.74 -14.33    -7.93 -2.08    0 0 Z" transform="translate(306.66,454.69) rotate(171.75)"/>
+    <path d="M 0 0 C  7.79 -2.05    6.62 -14.08    0 -25.60 C  -6.62 -14.08    -7.79 -2.05    0 0 Z" transform="translate(281.21,433.79) rotate(267.00)"/>
+    <path d="M 0 0 C  7.62 -2.00    6.48 -13.77    0 -25.04 C  -6.48 -13.77    -7.62 -2.00    0 0 Z" transform="translate(260.31,408.34) rotate(194.25)"/>
+    <path d="M 0 0 C  7.43 -1.95    6.31 -13.42    0 -24.41 C  -6.31 -13.42    -7.43 -1.95    0 0 Z" transform="translate(244.79,379.29) rotate(289.50)"/>
+    <path d="M 0 0 C  7.22 -1.90    6.14 -13.04    0 -23.72 C  -6.14 -13.04    -7.22 -1.90    0 0 Z" transform="translate(235.23,347.78) rotate(216.75)"/>
+    <path d="M 0 0 C  7.00 -1.84    5.95 -12.65    0 -23.00 C  -5.95 -12.65    -7.00 -1.84    0 0 Z" transform="translate(232.00,315.00) rotate(312.00)"/>
+    <path d="M 0 0 C  6.78 -1.78    5.76 -12.26    0 -22.28 C  -5.76 -12.26    -6.78 -1.78    0 0 Z" transform="translate(235.23,282.22) rotate(239.25)"/>
+    <path d="M 0 0 C  6.57 -1.73    5.59 -11.88    0 -21.59 C  -5.59 -11.88    -6.57 -1.73    0 0 Z" transform="translate(244.79,250.71) rotate(334.50)"/>
+    <path d="M 0 0 C  6.38 -1.68    5.42 -11.53    0 -20.96 C  -5.42 -11.53    -6.38 -1.68    0 0 Z" transform="translate(260.31,221.66) rotate(261.75)"/>
+    <path d="M 0 0 C  6.21 -1.63    5.28 -11.22    0 -20.40 C  -5.28 -11.22    -6.21 -1.63    0 0 Z" transform="translate(281.21,196.21) rotate(357.00)"/>
+    <path d="M 0 0 C  6.07 -1.60    5.16 -10.97    0 -19.94 C  -5.16 -10.97    -6.07 -1.60    0 0 Z" transform="translate(306.66,175.31) rotate(284.25)"/>
+    <path d="M 0 0 C  5.97 -1.57    5.07 -10.78    0 -19.60 C  -5.07 -10.78    -5.97 -1.57    0 0 Z" transform="translate(335.71,159.79) rotate(379.50)"/>
+    <path d="M 0 0 C  5.90 -1.55    5.02 -10.66    0 -19.39 C  -5.02 -10.66    -5.90 -1.55    0 0 Z" transform="translate(367.22,150.23) rotate(306.75)"/>
   </g>
 
-  <!-- Inner branch spiral (opposite lean, half-step offset) -->
-  <g fill="url(#g2)" opacity="0.90" filter="url(#soft)">
-    <path d="M 0 0 C  4.65 -1.96    3.72 -13.41    0 -16.36 C  -3.72 -13.41    -4.65 -1.96    0 0 Z" transform="translate(415.79,175.89) rotate(-34.57)"/>
-    <path d="M 0 0 C  4.69 -1.98    3.75 -13.52    0 -16.49 C  -3.75 -13.52    -4.69 -1.98    0 0 Z" transform="translate(446.57,182.91) rotate(60.29)"/>
-    <path d="M 0 0 C  4.76 -2.01    3.81 -13.73    0 -16.75 C  -3.81 -13.73    -4.76 -2.01    0 0 Z" transform="translate(475.02,196.61) rotate(-8.86)"/>
-    <path d="M 0 0 C  4.87 -2.05    3.89 -14.04    0 -17.12 C  -3.89 -14.04    -4.87 -2.05    0 0 Z" transform="translate(499.70,216.30) rotate(86.00)"/>
-    <path d="M 0 0 C  5.00 -2.11    4.00 -14.42    0 -17.58 C  -4.00 -14.42    -5.00 -2.11    0 0 Z" transform="translate(519.39,240.98) rotate(16.86)"/>
-    <path d="M 0 0 C  5.15 -2.17    4.12 -14.86    0 -18.12 C  -4.12 -14.86    -5.15 -2.17    0 0 Z" transform="translate(533.09,269.43) rotate(111.71)"/>
-    <path d="M 0 0 C  5.32 -2.24    4.25 -15.34    0 -18.70 C  -4.25 -15.34    -5.32 -2.24    0 0 Z" transform="translate(540.11,300.21) rotate(42.57)"/>
-    <path d="M 0 0 C  5.48 -2.32    4.39 -15.82    0 -19.30 C  -4.39 -15.82    -5.48 -2.32    0 0 Z" transform="translate(540.11,331.79) rotate(137.43)"/>
-    <path d="M 0 0 C  5.65 -2.39    4.52 -16.30    0 -19.88 C  -4.52 -16.30    -5.65 -2.39    0 0 Z" transform="translate(533.09,362.57) rotate(68.29)"/>
-    <path d="M 0 0 C  5.80 -2.45    4.64 -16.74    0 -20.42 C  -4.64 -16.74    -5.80 -2.45    0 0 Z" transform="translate(519.39,391.02) rotate(163.14)"/>
-    <path d="M 0 0 C  5.93 -2.51    4.75 -17.12    0 -20.88 C  -4.75 -17.12    -5.93 -2.51    0 0 Z" transform="translate(499.70,415.70) rotate(94.00)"/>
-    <path d="M 0 0 C  6.04 -2.55    4.83 -17.43    0 -21.25 C  -4.83 -17.43    -6.04 -2.55    0 0 Z" transform="translate(475.02,435.39) rotate(188.86)"/>
-    <path d="M 0 0 C  6.11 -2.58    4.89 -17.64    0 -21.51 C  -4.89 -17.64    -6.11 -2.58    0 0 Z" transform="translate(446.57,449.09) rotate(119.71)"/>
-    <path d="M 0 0 C  6.15 -2.60    4.92 -17.75    0 -21.64 C  -4.92 -17.75    -6.15 -2.60    0 0 Z" transform="translate(415.79,456.11) rotate(214.57)"/>
-    <path d="M 0 0 C  6.15 -2.60    4.92 -17.75    0 -21.64 C  -4.92 -17.75    -6.15 -2.60    0 0 Z" transform="translate(384.21,456.11) rotate(145.43)"/>
-    <path d="M 0 0 C  6.11 -2.58    4.89 -17.64    0 -21.51 C  -4.89 -17.64    -6.11 -2.58    0 0 Z" transform="translate(353.43,449.09) rotate(240.29)"/>
-    <path d="M 0 0 C  6.04 -2.55    4.83 -17.43    0 -21.25 C  -4.83 -17.43    -6.04 -2.55    0 0 Z" transform="translate(324.98,435.39) rotate(171.14)"/>
-    <path d="M 0 0 C  5.93 -2.51    4.75 -17.12    0 -20.88 C  -4.75 -17.12    -5.93 -2.51    0 0 Z" transform="translate(300.30,415.70) rotate(266.00)"/>
-    <path d="M 0 0 C  5.80 -2.45    4.64 -16.74    0 -20.42 C  -4.64 -16.74    -5.80 -2.45    0 0 Z" transform="translate(280.61,391.02) rotate(196.86)"/>
-    <path d="M 0 0 C  5.65 -2.39    4.52 -16.30    0 -19.88 C  -4.52 -16.30    -5.65 -2.39    0 0 Z" transform="translate(266.91,362.57) rotate(291.71)"/>
-    <path d="M 0 0 C  5.48 -2.32    4.39 -15.82    0 -19.30 C  -4.39 -15.82    -5.48 -2.32    0 0 Z" transform="translate(259.89,331.79) rotate(222.57)"/>
-    <path d="M 0 0 C  5.32 -2.24    4.25 -15.34    0 -18.70 C  -4.25 -15.34    -5.32 -2.24    0 0 Z" transform="translate(259.89,300.21) rotate(317.43)"/>
-    <path d="M 0 0 C  5.15 -2.17    4.12 -14.86    0 -18.12 C  -4.12 -14.86    -5.15 -2.17    0 0 Z" transform="translate(266.91,269.43) rotate(248.29)"/>
-    <path d="M 0 0 C  5.00 -2.11    4.00 -14.42    0 -17.58 C  -4.00 -14.42    -5.00 -2.11    0 0 Z" transform="translate(280.61,240.98) rotate(343.14)"/>
-    <path d="M 0 0 C  4.87 -2.05    3.89 -14.04    0 -17.12 C  -3.89 -14.04    -4.87 -2.05    0 0 Z" transform="translate(300.30,216.30) rotate(274.00)"/>
-    <path d="M 0 0 C  4.76 -2.01    3.81 -13.73    0 -16.75 C  -3.81 -13.73    -4.76 -2.01    0 0 Z" transform="translate(324.98,196.61) rotate(368.86)"/>
-    <path d="M 0 0 C  4.69 -1.98    3.75 -13.52    0 -16.49 C  -3.75 -13.52    -4.69 -1.98    0 0 Z" transform="translate(353.43,182.91) rotate(299.71)"/>
-    <path d="M 0 0 C  4.65 -1.96    3.72 -13.41    0 -16.36 C  -3.72 -13.41    -4.65 -1.96    0 0 Z" transform="translate(384.21,175.89) rotate(394.57)"/>
+  <!-- Inner branch (opposite spiral, half-step offset) -->
+  <g fill="url(#g2)" opacity="0.92" filter="url(#soft)">
+    <path d="M 0 0 C  4.88 -1.28    4.15 -8.79    0 -15.98 C  -4.15 -8.79    -4.88 -1.28    0 0 Z" transform="translate(416.88,176.02) rotate(-32.08)"/>
+    <path d="M 0 0 C  4.93 -1.29    4.19 -8.89    0 -16.16 C  -4.19 -8.89    -4.93 -1.29    0 0 Z" transform="translate(449.64,184.10) rotate(59.77)"/>
+    <path d="M 0 0 C  5.04 -1.32    4.28 -9.07    0 -16.50 C  -4.28 -9.07    -5.04 -1.32    0 0 Z" transform="translate(479.53,199.78) rotate(-4.38)"/>
+    <path d="M 0 0 C  5.18 -1.36    4.41 -9.34    0 -16.98 C  -4.41 -9.34    -5.18 -1.36    0 0 Z" transform="translate(504.79,222.16) rotate(87.46)"/>
+    <path d="M 0 0 C  5.37 -1.41    4.56 -9.67    0 -17.59 C  -4.56 -9.67    -5.37 -1.41    0 0 Z" transform="translate(523.96,249.94) rotate(23.31)"/>
+    <path d="M 0 0 C  5.58 -1.46    4.74 -10.05    0 -18.27 C  -4.74 -10.05    -5.58 -1.46    0 0 Z" transform="translate(535.93,281.50) rotate(115.15)"/>
+    <path d="M 0 0 C  5.80 -1.52    4.93 -10.45    0 -19.00 C  -4.93 -10.45    -5.80 -1.52    0 0 Z" transform="translate(540.00,315.00) rotate(51.00)"/>
+    <path d="M 0 0 C  6.02 -1.58    5.12 -10.85    0 -19.73 C  -5.12 -10.85    -6.02 -1.58    0 0 Z" transform="translate(535.93,348.50) rotate(142.85)"/>
+    <path d="M 0 0 C  6.23 -1.63    5.30 -11.23    0 -20.41 C  -5.30 -11.23    -6.23 -1.63    0 0 Z" transform="translate(523.96,380.06) rotate(78.69)"/>
+    <path d="M 0 0 C  6.42 -1.68    5.45 -11.56    0 -21.02 C  -5.45 -11.56    -6.42 -1.68    0 0 Z" transform="translate(504.79,407.84) rotate(170.54)"/>
+    <path d="M 0 0 C  6.56 -1.72    5.58 -11.83    0 -21.50 C  -5.58 -11.83    -6.56 -1.72    0 0 Z" transform="translate(479.53,430.22) rotate(106.38)"/>
+    <path d="M 0 0 C  6.67 -1.75    5.67 -12.01    0 -21.84 C  -5.67 -12.01    -6.67 -1.75    0 0 Z" transform="translate(449.64,445.90) rotate(198.23)"/>
+    <path d="M 0 0 C  6.72 -1.76    5.71 -12.11    0 -22.02 C  -5.71 -12.11    -6.72 -1.76    0 0 Z" transform="translate(416.88,453.98) rotate(134.08)"/>
+    <path d="M 0 0 C  6.72 -1.76    5.71 -12.11    0 -22.02 C  -5.71 -12.11    -6.72 -1.76    0 0 Z" transform="translate(383.12,453.98) rotate(225.92)"/>
+    <path d="M 0 0 C  6.67 -1.75    5.67 -12.01    0 -21.84 C  -5.67 -12.01    -6.67 -1.75    0 0 Z" transform="translate(350.36,445.90) rotate(161.77)"/>
+    <path d="M 0 0 C  6.56 -1.72    5.58 -11.83    0 -21.50 C  -5.58 -11.83    -6.56 -1.72    0 0 Z" transform="translate(320.47,430.22) rotate(253.62)"/>
+    <path d="M 0 0 C  6.42 -1.68    5.45 -11.56    0 -21.02 C  -5.45 -11.56    -6.42 -1.68    0 0 Z" transform="translate(295.21,407.84) rotate(189.46)"/>
+    <path d="M 0 0 C  6.23 -1.63    5.30 -11.23    0 -20.41 C  -5.30 -11.23    -6.23 -1.63    0 0 Z" transform="translate(276.04,380.06) rotate(281.31)"/>
+    <path d="M 0 0 C  6.02 -1.58    5.12 -10.85    0 -19.73 C  -5.12 -10.85    -6.02 -1.58    0 0 Z" transform="translate(264.07,348.50) rotate(217.15)"/>
+    <path d="M 0 0 C  5.80 -1.52    4.93 -10.45    0 -19.00 C  -4.93 -10.45    -5.80 -1.52    0 0 Z" transform="translate(260.00,315.00) rotate(309.00)"/>
+    <path d="M 0 0 C  5.58 -1.46    4.74 -10.05    0 -18.27 C  -4.74 -10.05    -5.58 -1.46    0 0 Z" transform="translate(264.07,281.50) rotate(244.85)"/>
+    <path d="M 0 0 C  5.37 -1.41    4.56 -9.67    0 -17.59 C  -4.56 -9.67    -5.37 -1.41    0 0 Z" transform="translate(276.04,249.94) rotate(336.69)"/>
+    <path d="M 0 0 C  5.18 -1.36    4.41 -9.34    0 -16.98 C  -4.41 -9.34    -5.18 -1.36    0 0 Z" transform="translate(295.21,222.16) rotate(272.54)"/>
+    <path d="M 0 0 C  5.04 -1.32    4.28 -9.07    0 -16.50 C  -4.28 -9.07    -5.04 -1.32    0 0 Z" transform="translate(320.47,199.78) rotate(364.38)"/>
+    <path d="M 0 0 C  4.93 -1.29    4.19 -8.89    0 -16.16 C  -4.19 -8.89    -4.93 -1.29    0 0 Z" transform="translate(350.36,184.10) rotate(300.23)"/>
+    <path d="M 0 0 C  4.88 -1.28    4.15 -8.79    0 -15.98 C  -4.15 -8.79    -4.88 -1.28    0 0 Z" transform="translate(383.12,176.02) rotate(392.08)"/>
   </g>
 
-  <!-- ADERA HOLDINGS wordmark -->
+  <!-- Wordmark -->
   <text
-    x="400" y="594"
+    x="400" y="592"
     text-anchor="middle"
     font-family="Georgia, 'Times New Roman', serif"
-    font-size="60" font-weight="400" letter-spacing="16"
+    font-size="58" font-weight="400" letter-spacing="16"
     fill="url(#g1)"
-  >ADERA HOLDINGS</text>
+  >ADERA  HOLDINGS</text>
 
   <!-- Hairline rule -->
-  <line x1="172" y1="622" x2="628" y2="622"
-        stroke="url(#g2)" stroke-width="0.7" opacity="0.40"/>
+  <line x1="178" y1="618" x2="622" y2="618"
+        stroke="url(#g2)" stroke-width="0.8" opacity="0.38"/>
 </svg>
