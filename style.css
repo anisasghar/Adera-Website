@@ -398,6 +398,75 @@ img { display: block; max-width: 100%; }
   font-style: normal;
 }
 
+/* --- Adera Name Meaning --- */
+.adera-meaning {
+  margin-top: 5rem;
+  padding-top: 4rem;
+  border-top: 1px solid var(--border);
+}
+
+.adera-meaning__inner {
+  display: grid;
+  grid-template-columns: 220px 1px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.adera-meaning__word {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.25rem;
+}
+
+.adera-meaning__name {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--gold);
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.adera-meaning__pronunciation {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.adera-meaning__divider {
+  width: 1px;
+  background: var(--border);
+  align-self: stretch;
+}
+
+.adera-meaning__def {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--white);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.adera-meaning__body {
+  font-size: 0.88rem;
+  color: rgba(245, 243, 238, 0.6);
+  line-height: 1.85;
+  margin-bottom: 0.85rem;
+}
+.adera-meaning__body:last-child { margin-bottom: 0; }
+
+@media (max-width: 768px) {
+  .adera-meaning__inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .adera-meaning__divider { display: none; }
+}
+
 /* ===========================
    PILLARS
    =========================== */
