@@ -398,6 +398,40 @@ img { display: block; max-width: 100%; }
   font-style: normal;
 }
 
+/* --- Mission Statement --- */
+.mission {
+  margin-top: 5rem;
+  padding: 3.5rem;
+  border: 1px solid var(--border);
+  background: linear-gradient(135deg, var(--dark-2), var(--dark-3));
+  position: relative;
+}
+.mission::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 3rem;
+  right: 3rem;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.mission__statement {
+  font-family: var(--font-serif);
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.75;
+  color: rgba(245, 243, 238, 0.88);
+  margin-top: 1rem;
+  border: none;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .mission { padding: 2rem 1.5rem; }
+}
+
 /* --- Adera Name Meaning --- */
 .adera-meaning {
   margin-top: 5rem;
