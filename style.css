@@ -525,9 +525,15 @@ img { display: block; max-width: 100%; }
 .pillars__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
   gap: 1.5px;
   background: var(--border);
   border: 1px solid var(--border);
+}
+
+.pillar {
+  display: flex;
+  flex-direction: column;
 }
 
 .pillar {
