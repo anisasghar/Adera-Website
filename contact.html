@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adera Holdings | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/logo.svg" alt="Adera Holdings" class="nav__logo-img" />
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="values.html">Our Values</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" class="nav__cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <header class="page-hero">
+    <div class="page-hero__bg"></div>
+    <div class="page-hero__content">
+      <p class="page-hero__eyebrow reveal">Get in Touch</p>
+      <h1 class="page-hero__title reveal">Let's Build Something <em>Lasting</em></h1>
+      <p class="page-hero__sub reveal">We welcome conversations with entrepreneurs, co-investors, and institutions who share our long-term perspective.</p>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="section contact">
+    <div class="contact__bg"></div>
+    <div class="container">
+      <div class="contact__grid">
+
+        <!-- Left: Info -->
+        <div class="contact__info">
+          <p class="section__eyebrow reveal">Reach Us</p>
+          <h2 class="section__title reveal">We Would Like to<br /><em>Hear From You</em></h2>
+          <p class="contact__body reveal">
+            Whether you are a founder seeking a thoughtful long-term partner, an institution exploring co-investment, or simply someone who believes in what we stand for — we would like to hear from you.
+          </p>
+          <p class="contact__body reveal">
+            We read every message carefully. You can expect a considered response.
+          </p>
+          <div class="contact__details reveal">
+            <div>
+              <span class="contact__detail-label">General Inquiries</span>
+              <a href="mailto:info@aderaholdings.com" class="contact__detail-value">info@aderaholdings.com</a>
+            </div>
+            <div>
+              <span class="contact__detail-label">Headquarters</span>
+              <span class="contact__detail-value">London, United Kingdom</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact__form-wrap reveal">
+          <form class="contact__form" onsubmit="handleSubmit(event)">
+            <div class="form__row">
+              <div class="form__group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="James" required />
+              </div>
+              <div class="form__group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Thornton" required />
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="james@example.com" required />
+            </div>
+            <div class="form__group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a subject</option>
+                <option value="Investment Opportunity">Investment Opportunity</option>
+                <option value="Strategic Partnership">Strategic Partnership</option>
+                <option value="General Enquiry">General Enquiry</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your enquiry…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--gold btn--full">Send Message</button>
+            <p class="form__success" id="formSuccess">Your message has been received. We will be in touch shortly.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/logo.svg" alt="Adera Holdings" class="footer__logo" />
+          <p class="footer__tagline">Building Legacies. Creating Value.</p>
+        </div>
+        <nav class="footer__nav">
+          <div class="footer__nav-col">
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="values.html">Our Values</a>
+            <a href="portfolio.html">Portfolio</a>
+          </div>
+          <div class="footer__nav-col">
+            <h4>Connect</h4>
+            <a href="contact.html">Contact</a>
+            <a href="mailto:info@aderaholdings.com">Press Inquiries</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Adera Holdings. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

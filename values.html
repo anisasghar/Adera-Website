@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adera Holdings | Our Values</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/logo.svg" alt="Adera Holdings" class="nav__logo-img" />
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="values.html">Our Values</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" class="nav__cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <header class="page-hero">
+    <div class="page-hero__bg"></div>
+    <div class="page-hero__content">
+      <p class="page-hero__eyebrow reveal">What We Stand For</p>
+      <h1 class="page-hero__title reveal">Values That Do Not <em>Waver</em></h1>
+      <p class="page-hero__sub reveal">At Adera Holdings, our values are not aspirations — they are the standard by which we hold ourselves accountable, every day, in every decision.</p>
+    </div>
+  </header>
+
+  <!-- Values Section -->
+  <section class="section pillars">
+    <div class="pillars__bg"></div>
+    <div class="container">
+
+      <p class="pillars__intro reveal">
+        Our values are a direct expression of our mission and the meaning of our name. They define how we behave when no one is watching, how we lead when the path is uncertain, and how we honour the trust placed in us by those we serve.
+      </p>
+
+      <div class="pillars__grid">
+
+        <!-- Integrity -->
+        <div class="pillar reveal">
+          <div class="pillar__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3 class="pillar__title">Integrity</h3>
+          <p class="pillar__text"><em>The cornerstone of everything we do.</em> We are uncompromising in our commitment to ethical conduct. Every transaction, every conversation, every decision is held to the same standard: would we be comfortable if the world could see exactly what we are doing, and why? Trust is not given — it is earned, and we intend to keep earning it.</p>
+        </div>
+
+        <!-- Stewardship -->
+        <div class="pillar reveal">
+          <div class="pillar__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3 class="pillar__title">Stewardship</h3>
+          <p class="pillar__text"><em>We are custodians, not owners.</em> We manage capital with a long view, accepting responsibility not just for returns today but for the wealth, opportunity, and well-being we leave behind. This is the essence of Adera: a promise carried forward, generation to generation.</p>
+        </div>
+
+        <!-- Excellence -->
+        <div class="pillar reveal">
+          <div class="pillar__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <h3 class="pillar__title">Excellence</h3>
+          <p class="pillar__text"><em>Good enough is never enough.</em> We hold ourselves to the highest standards of diligence, precision, and professionalism — in investment analysis, in governance, and in how we treat every person who depends on us. We pursue excellence not as a destination, but as a discipline.</p>
+        </div>
+
+        <!-- Collaboration -->
+        <div class="pillar reveal">
+          <div class="pillar__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3 class="pillar__title">Collaboration</h3>
+          <p class="pillar__text"><em>We believe a promise made ripples outward.</em> We work alongside our partners, advisors, and portfolio companies as genuine allies — not intermediaries. We listen before we lead, and we share both the effort and the reward.</p>
+        </div>
+
+        <!-- Prudence -->
+        <div class="pillar reveal">
+          <div class="pillar__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3 class="pillar__title">Prudence</h3>
+          <p class="pillar__text"><em>Ambition, tempered by wisdom.</em> We exercise disciplined judgment in the face of uncertainty, resisting the pressure of short-term thinking. We balance ambition with responsibility, growth with resilience, and opportunity with careful risk management.</p>
+        </div>
+
+      </div>
+
+      <p class="pillars__closing reveal">
+        These values underpin every decision Adera Holdings makes. They enable us to navigate complex global markets with confidence, to preserve and grow wealth across generations, and to be the kind of partner our stakeholders can rely on — not just today, but for everything that follows.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- Page CTA -->
+  <div class="page-cta">
+    <a href="portfolio.html">Explore Our Portfolio →</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/logo.svg" alt="Adera Holdings" class="footer__logo" />
+          <p class="footer__tagline">Building Legacies. Creating Value.</p>
+        </div>
+        <nav class="footer__nav">
+          <div class="footer__nav-col">
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="values.html">Our Values</a>
+            <a href="portfolio.html">Portfolio</a>
+          </div>
+          <div class="footer__nav-col">
+            <h4>Connect</h4>
+            <a href="contact.html">Contact</a>
+            <a href="mailto:info@aderaholdings.com">Press Inquiries</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Adera Holdings. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
