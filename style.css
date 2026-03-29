@@ -1167,3 +1167,98 @@ a.contact__detail-value:hover { color: var(--gold-light); }
   .cta-banner__box { padding: 2rem 1.5rem; }
   .inv-phil { padding: 2rem 1.5rem; }
 }
+
+/* --- Legal / Privacy Policy --- */
+.legal-content { background: var(--dark); }
+
+.legal__body {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.legal__intro {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+.legal__intro p {
+  font-size: 1rem;
+  color: rgba(245,243,238,0.7);
+  line-height: 1.85;
+  margin-bottom: 0.85rem;
+}
+
+.legal__section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+.legal__section:last-child { border-bottom: none; }
+
+.legal__section h2 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.legal__section h3 {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(245,243,238,0.6);
+  margin: 1.5rem 0 0.75rem;
+}
+
+.legal__section p {
+  font-size: 0.92rem;
+  color: rgba(245,243,238,0.65);
+  line-height: 1.85;
+  margin-bottom: 0.85rem;
+}
+
+.legal__section ul {
+  margin: 0.5rem 0 1rem 1.25rem;
+  list-style: none;
+  padding: 0;
+}
+.legal__section ul li {
+  font-size: 0.92rem;
+  color: rgba(245,243,238,0.65);
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+.legal__section ul li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--gold-dark);
+}
+
+.legal__section a {
+  color: var(--gold);
+  border-bottom: 1px solid var(--gold-dark);
+  transition: color 0.3s, border-color 0.3s;
+}
+.legal__section a:hover { color: var(--gold-light); border-color: var(--gold-light); }
+
+.legal__contact-block {
+  background: var(--dark-2);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--gold-dark);
+  padding: 1.25rem 1.5rem;
+  margin: 1rem 0;
+}
+.legal__contact-block p {
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+.legal__intro a { color: var(--gold); border-bottom: 1px solid var(--gold-dark); }
+.legal__intro a:hover { color: var(--gold-light); }
