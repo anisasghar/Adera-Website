@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adera Holdings | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/logo.svg" alt="Adera Holdings" class="nav__logo-img" />
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="values.html">Our Values</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" class="nav__cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <header class="page-hero">
+    <div class="page-hero__bg"></div>
+    <div class="page-hero__content">
+      <p class="page-hero__eyebrow reveal">Where We Invest</p>
+      <h1 class="page-hero__title reveal">Sectors of <em>Conviction</em></h1>
+      <p class="page-hero__sub reveal">We invest in businesses and assets where we have deep domain expertise, long-term structural tailwinds, and the conviction to be patient owners.</p>
+    </div>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section class="section portfolio">
+    <div class="container">
+
+      <p class="portfolio__intro reveal">
+        Adera Holdings maintains a deliberately concentrated portfolio — favouring depth of understanding over breadth of exposure. Each sector we invest in is one where we believe we can add genuine value as partners, not simply as capital providers.
+      </p>
+
+      <div class="portfolio__grid">
+
+        <!-- Real Estate -->
+        <div class="portfolio__card reveal">
+          <div class="portfolio__card-top">
+            <span class="portfolio__number">01</span>
+            <div class="portfolio__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="portfolio__title">Real Estate</h3>
+          <p class="portfolio__text">We invest in premium commercial and residential assets across key global cities. Our approach prioritises quality of asset, quality of location, and quality of income — delivering consistent yield, long-term capital appreciation, and resilience across market cycles.</p>
+          <a href="contact.html" class="portfolio__link">Enquire →</a>
+        </div>
+
+        <!-- Financial Services -->
+        <div class="portfolio__card reveal">
+          <div class="portfolio__card-top">
+            <span class="portfolio__number">02</span>
+            <div class="portfolio__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                <line x1="1" y1="10" x2="23" y2="10"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="portfolio__title">Financial Services</h3>
+          <p class="portfolio__text">We hold strategic positions in banking, insurance, and alternative investment businesses. Our relationships within the sector run deep, and our understanding of risk and return is embedded in everything we do.</p>
+          <a href="contact.html" class="portfolio__link">Enquire →</a>
+        </div>
+
+        <!-- Technology -->
+        <div class="portfolio__card reveal">
+          <div class="portfolio__card-top">
+            <span class="portfolio__number">03</span>
+            <div class="portfolio__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="portfolio__title">Technology</h3>
+          <p class="portfolio__text">We back exceptional founders and management teams building transformative technology businesses. From early-stage ventures to growth-stage platforms, we invest where technology is reshaping industries and creating genuinely new markets.</p>
+          <a href="contact.html" class="portfolio__link">Enquire →</a>
+        </div>
+
+        <!-- Hospitality & Luxury -->
+        <div class="portfolio__card reveal">
+          <div class="portfolio__card-top">
+            <span class="portfolio__number">04</span>
+            <div class="portfolio__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="portfolio__title">Hospitality &amp; Luxury</h3>
+          <p class="portfolio__text">We curate a portfolio of premium hospitality assets and luxury consumer brands — each chosen for its quality, authenticity, and enduring appeal. We believe that genuine luxury, delivered with care, retains its value in any economic environment.</p>
+          <a href="contact.html" class="portfolio__link">Enquire →</a>
+        </div>
+
+        <!-- Infrastructure -->
+        <div class="portfolio__card reveal">
+          <div class="portfolio__card-top">
+            <span class="portfolio__number">05</span>
+            <div class="portfolio__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="12" x2="2" y2="12"/>
+                <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/>
+                <line x1="6" y1="16" x2="6.01" y2="16"/>
+                <line x1="10" y1="16" x2="10.01" y2="16"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="portfolio__title">Infrastructure</h3>
+          <p class="portfolio__text">We invest in essential infrastructure assets that underpin modern economies. These long-duration holdings provide stable, inflation-linked cash flows, anchoring the portfolio and providing the resilience that underpins our broader ambitions.</p>
+          <a href="contact.html" class="portfolio__link">Enquire →</a>
+        </div>
+
+        <!-- Healthcare -->
+        <div class="portfolio__card reveal">
+          <div class="portfolio__card-top">
+            <span class="portfolio__number">06</span>
+            <div class="portfolio__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="portfolio__title">Healthcare</h3>
+          <p class="portfolio__text">We back businesses improving the delivery, quality, and efficiency of healthcare. From healthcare services to life sciences and medical technology, we invest where innovation meets genuine human need.</p>
+          <a href="contact.html" class="portfolio__link">Enquire →</a>
+        </div>
+
+      </div>
+
+      <!-- Investment Philosophy Panel -->
+      <div class="inv-phil reveal">
+        <h3 class="inv-phil__title">Our Investment Philosophy</h3>
+        <p class="inv-phil__body">We are long-term, concentrated investors. We do not chase trends or rotate through fashionable themes. We invest where we have conviction, hold for the long run, and work actively with our portfolio companies to build businesses of enduring worth. Capital preservation is not a constraint — it is a discipline.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Page CTA -->
+  <div class="page-cta">
+    <a href="contact.html">Start a Conversation →</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/logo.svg" alt="Adera Holdings" class="footer__logo" />
+          <p class="footer__tagline">Building Legacies. Creating Value.</p>
+        </div>
+        <nav class="footer__nav">
+          <div class="footer__nav-col">
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="values.html">Our Values</a>
+            <a href="portfolio.html">Portfolio</a>
+          </div>
+          <div class="footer__nav-col">
+            <h4>Connect</h4>
+            <a href="contact.html">Contact</a>
+            <a href="mailto:info@aderaholdings.com">Press Inquiries</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Adera Holdings. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
