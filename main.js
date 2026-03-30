@@ -48,6 +48,39 @@ const observer = new IntersectionObserver((entries) => {
 
 revealEls.forEach(el => observer.observe(el));
 
+// --- Cookie Consent Banner ---
+(function initCookieBanner() {
+  if (localStorage.getItem('adera_cookie_consent')) return;
+
+  const banner = document.createElement('div');
+  banner.id = 'cookieBanner';
+  banner.className = 'cookie-banner';
+  banner.innerHTML = `
+    <div class="cookie-banner__inner">
+      <div class="cookie-banner__text">
+        <p>We use cookies to improve your experience and analyse site usage. By clicking <strong>Accept All</strong>, you consent to our use of cookies. You can manage your preferences at any time. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button class="cookie-banner__decline" id="cookieDecline">Decline</button>
+        <button class="cookie-banner__accept" id="cookieAccept">Accept All</button>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(banner);
+
+  // Animate in after short delay
+  setTimeout(() => banner.classList.add('cookie-banner--visible'), 400);
+
+  function dismiss(choice) {
+    localStorage.setItem('adera_cookie_consent', choice);
+    banner.classList.remove('cookie-banner--visible');
+    setTimeout(() => banner.remove(), 400);
+  }
+
+  document.getElementById('cookieAccept').addEventListener('click', () => dismiss('accepted'));
+  document.getElementById('cookieDecline').addEventListener('click', () => dismiss('declined'));
+})();
+
 // --- Form submit ---
 function handleSubmit(e) {
   e.preventDefault();
