@@ -4,29 +4,34 @@
 
 // --- Nav scroll effect ---
 const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 60);
-}, { passive: true });
+if (nav) {
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+}
 
 // --- Mobile menu toggle ---
 function toggleMenu() {
   const links = document.getElementById('navLinks');
-  links.classList.toggle('open');
+  if (links) links.classList.toggle('open');
 }
 
 // Close menu when a link is clicked
 document.querySelectorAll('.nav__links a').forEach(link => {
   link.addEventListener('click', () => {
-    document.getElementById('navLinks').classList.remove('open');
+    const links = document.getElementById('navLinks');
+    if (links) links.classList.remove('open');
   });
 });
 
 // --- Active nav link based on current page ---
 (function setActiveNav() {
-  const path = window.location.pathname.split('/').pop() || 'index.html';
+  const pathname = window.location.pathname;
+  // Strip trailing slash, query string, then get filename
+  const page = pathname.replace(/\/$/, '').split('/').pop().split('?')[0] || 'index.html';
   document.querySelectorAll('.nav__links a').forEach(link => {
     const href = link.getAttribute('href');
-    if (href === path || (path === '' && href === 'index.html')) {
+    if (href === page || (page === '' && href === 'index.html')) {
       link.classList.add('active');
     }
   });
@@ -35,7 +40,7 @@ document.querySelectorAll('.nav__links a').forEach(link => {
 // --- Reveal on scroll ---
 const revealEls = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
       // Stagger siblings in the same parent
       const siblings = Array.from(entry.target.parentElement.querySelectorAll('.reveal:not(.visible)'));
@@ -92,7 +97,9 @@ function handleSubmit(e) {
     e.target.reset();
     btn.textContent = 'Send Message';
     btn.disabled = false;
-    success.classList.add('visible');
-    setTimeout(() => success.classList.remove('visible'), 5000);
+    if (success) {
+      success.classList.add('visible');
+      setTimeout(() => success.classList.remove('visible'), 5000);
+    }
   }, 1200);
 }
