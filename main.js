@@ -103,3 +103,27 @@ function handleSubmit(e) {
     }
   }, 1200);
 }
+
+// --- Theme toggle ---
+(function initTheme() {
+  const saved = localStorage.getItem('adera_theme');
+  if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.theme-toggle').forEach(btn => {
+      btn.textContent = document.documentElement.getAttribute('data-theme') === 'light' ? 'DARK' : 'LIGHT';
+      btn.addEventListener('click', () => {
+        const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+        if (isLight) {
+          document.documentElement.removeAttribute('data-theme');
+          localStorage.setItem('adera_theme', 'dark');
+          btn.textContent = 'LIGHT';
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('adera_theme', 'light');
+          btn.textContent = 'DARK';
+        }
+      });
+    });
+  });
+})();
