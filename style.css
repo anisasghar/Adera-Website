@@ -379,10 +379,11 @@ img { display: block; max-width: 100%; }
   width: 160px;
   margin: 0 auto 2rem;
   opacity: 0.9;
+  mix-blend-mode: screen;
 }
 .about__emblem img {
-  mix-blend-mode: screen;
   width: 100%;
+  display: block;
 }
 .about__quote {
   font-family: var(--font-serif);
