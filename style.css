@@ -364,6 +364,7 @@ img { display: block; max-width: 100%; }
   border: 1px solid var(--border);
   padding: 3rem;
   position: relative;
+  isolation: isolate;
 }
 .about__card::before {
   content: '';
@@ -379,11 +380,12 @@ img { display: block; max-width: 100%; }
   width: 160px;
   margin: 0 auto 2rem;
   opacity: 0.9;
-  mix-blend-mode: screen;
 }
 .about__emblem img {
   width: 100%;
   display: block;
+  mix-blend-mode: screen;
+  isolation: isolate;
 }
 .about__quote {
   font-family: var(--font-serif);
