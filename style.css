@@ -380,6 +380,10 @@ img { display: block; max-width: 100%; }
   margin: 0 auto 2rem;
   opacity: 0.9;
 }
+.about__emblem img {
+  mix-blend-mode: screen;
+  width: 100%;
+}
 .about__quote {
   font-family: var(--font-serif);
   font-size: 1.25rem;
