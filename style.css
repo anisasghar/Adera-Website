@@ -145,7 +145,7 @@ img { display: block; max-width: 100%; }
   justify-content: space-between;
 }
 
-.nav__logo-img { height: 42px; width: auto; }
+.nav__logo-img { height: 72px; width: auto; }
 
 .nav__links {
   list-style: none;
@@ -384,8 +384,6 @@ img { display: block; max-width: 100%; }
 .about__emblem img {
   width: 100%;
   display: block;
-  mix-blend-mode: screen;
-  isolation: isolate;
 }
 .about__quote {
   font-family: var(--font-serif);
