@@ -86,6 +86,16 @@ revealEls.forEach(el => observer.observe(el));
   document.getElementById('cookieDecline').addEventListener('click', () => dismiss('declined'));
 })();
 
+// --- Deter casual image saving (logo, team photos) ---
+// Note: this only stops right-click "Save Image As" / drag-out; it does not
+// prevent scraping, view-source, or dedicated download tools.
+document.addEventListener('contextmenu', (e) => {
+  if (e.target.tagName === 'IMG') e.preventDefault();
+});
+document.addEventListener('dragstart', (e) => {
+  if (e.target.tagName === 'IMG') e.preventDefault();
+});
+
 // --- Form submit ---
 function handleSubmit(e) {
   e.preventDefault();
