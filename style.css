@@ -9,15 +9,15 @@
   --gold:        #c9a84c;
   --gold-light:  #e8cb7a;
   --gold-dark:   #9a7a2e;
-  --black:       #080808;
-  --dark:        #0e0e0e;
-  --dark-2:      #141414;
-  --dark-3:      #1c1c1c;
+  --black:       #050505;
+  --dark:        #050505;
+  --dark-2:      #0c0c0c;
+  --dark-3:      #121212;
   --white:       #f5f3ee;
   --muted:       #888882;
   --border:      rgba(201, 168, 76, 0.18);
   --text-rgb:    245, 243, 238;
-  --nav-bg-rgb:  8, 8, 8;
+  --nav-bg-rgb:  5, 5, 5;
   --font-serif:  'Cormorant Garamond', Georgia, serif;
   --font-sans:   'Montserrat', 'Helvetica Neue', sans-serif;
   --max-w:       1160px;
@@ -209,9 +209,9 @@ img { display: block; max-width: 100%; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 60% at 50% 30%, rgba(154, 122, 46, 0.08) 0%, transparent 70%),
-    radial-gradient(ellipse 50% 50% at 80% 80%, rgba(201, 168, 76, 0.04) 0%, transparent 60%),
-    linear-gradient(180deg, #080808 0%, #0c0b09 100%);
+    radial-gradient(ellipse 80% 60% at 50% 30%, rgba(154, 122, 46, 0.045) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 50% at 80% 80%, rgba(201, 168, 76, 0.025) 0%, transparent 60%),
+    linear-gradient(180deg, #050505 0%, #070605 100%);
 }
 .hero__bg::after {
   content: '';
@@ -569,7 +569,7 @@ img { display: block; max-width: 100%; }
 .pillars__bg {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(154, 122, 46, 0.05) 0%, transparent 70%);
+  background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(154, 122, 46, 0.03) 0%, transparent 70%);
 }
 
 .pillars__intro {
@@ -738,7 +738,7 @@ img { display: block; max-width: 100%; }
 .contact__bg {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 60% 80% at 0% 50%, rgba(154, 122, 46, 0.05) 0%, transparent 60%);
+  background: radial-gradient(ellipse 60% 80% at 0% 50%, rgba(154, 122, 46, 0.03) 0%, transparent 60%);
 }
 
 .contact__grid {
@@ -997,8 +997,8 @@ a.contact__detail-value:hover { color: var(--gold-light); }
 .page-hero__bg {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 70% 60% at 50% 40%, rgba(154,122,46,0.07) 0%, transparent 70%),
-              linear-gradient(180deg, #080808 0%, #0c0b09 100%);
+  background: radial-gradient(ellipse 70% 60% at 50% 40%, rgba(154,122,46,0.04) 0%, transparent 70%),
+              linear-gradient(180deg, #050505 0%, #070605 100%);
 }
 .page-hero__bg::after {
   content: '';
@@ -1101,7 +1101,7 @@ a.contact__detail-value:hover { color: var(--gold-light); }
 .home-approach__bg {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 60% 60% at 15% 50%, rgba(154, 122, 46, 0.06) 0%, transparent 70%);
+  background: radial-gradient(ellipse 60% 60% at 15% 50%, rgba(154, 122, 46, 0.035) 0%, transparent 70%);
 }
 .home-approach__header {
   display: grid;
@@ -1233,7 +1233,7 @@ a.contact__detail-value:hover { color: var(--gold-light); }
 .home-team-preview__bg {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 60% 60% at 85% 50%, rgba(154, 122, 46, 0.05) 0%, transparent 70%);
+  background: radial-gradient(ellipse 60% 60% at 85% 50%, rgba(154, 122, 46, 0.03) 0%, transparent 70%);
 }
 .home-team-preview__inner {
   display: grid;
@@ -1493,7 +1493,7 @@ a.contact__detail-value:hover { color: var(--gold-light); }
 .team__bg {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(154, 122, 46, 0.05) 0%, transparent 70%);
+  background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(154, 122, 46, 0.03) 0%, transparent 70%);
 }
 
 .team__intro {
